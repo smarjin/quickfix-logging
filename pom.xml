@@ -7,16 +7,21 @@
     <groupId>quickfix</groupId>
     <artifactId>quickfix-currencycloud-logging</artifactId>
     <version>1.0.2-SNAPSHOT</version>
-    <properties>
-        <rubyBaseDir>/Users/jeremybotha/development/platform</rubyBaseDir>
-    </properties>
+    <repositories>
+        <repository>
+            <id>marketcetera</id>
+            <url>http://repo.marketcetera.org/maven</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>quickfixj</groupId>
             <artifactId>quickfixj-all</artifactId>
             <version>1.6.1</version>
-            <scope>system</scope>
-            <systemPath>/Users/jeremybotha/development/java/lib/quickfixj-all-1.6.1.jar</systemPath>
         </dependency>
     </dependencies>
     <build>
